@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+		function setSearchEngine() {
+      console.log("it ran");
+    }
     window.addEventListener("load", function(){
-        // TODO: register the handler
+        let form = document.getElementById("searchForm");
+        form.addEventListener("submit", setSearchEngine);
     });
 	</script>
 </head>
